@@ -10,7 +10,7 @@ class CreateArticles < ActiveRecord::Migration
 			t.boolean :dosage_included
 			t.string :dosage_amt
 
-			t.timestamps null: false
+      t.timestamps null: false
     end
   end
 end

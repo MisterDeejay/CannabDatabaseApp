@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150618055801) do
+ActiveRecord::Schema.define(version: 20150618203851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,47 @@ ActiveRecord::Schema.define(version: 20150618055801) do
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  create_table "authors", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.integer  "article_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "disease_tags", force: :cascade do |t|
+    t.string   "name",          null: false
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "disease_tags", ["taggable_type", "taggable_id"], name: "index_disease_tags_on_taggable_type_and_taggable_id", using: :btree
+
+  create_table "journals", force: :cascade do |t|
+    t.string "name", null: false
+  end
+
+  create_table "keywords", force: :cascade do |t|
+    t.string   "name",          null: false
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "keywords", ["taggable_type", "taggable_id"], name: "index_keywords_on_taggable_type_and_taggable_id", using: :btree
+
+  create_table "phyto_cannabinoids", force: :cascade do |t|
+    t.string   "name",          null: false
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "phyto_cannabinoids", ["taggable_type", "taggable_id"], name: "index_phyto_cannabinoids_on_taggable_type_and_taggable_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "full_name",       null: false

@@ -4,7 +4,7 @@ class CreateAuthors < ActiveRecord::Migration
 			t.string :name, null: false
 			t.integer :article_id, null: false
 
-			t.timestamps null: false
+      t.timestamps null: false
     end
   end
 end
