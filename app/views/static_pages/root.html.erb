@@ -9,10 +9,7 @@
     <link rel="icon" href="assets/img/favicon.ico">
 		<%= favicon_link_tag 'favicon.ico' %>
 
-    <title>Organic Galenicals</title>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <title>BlackTie.co - Sumo Lading</title>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -52,12 +49,12 @@
           <h2>All the features you want in this kind of apps you'll got it here.</h2>
           <p class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           <p class="store">
-            <a href="#"><img src="assets/img/app-store.png" height="50" alt=""></a>
-            <a href="#"><img src="assets/img/google-play.png" height="50" alt=""></a>
+						<a href="#"><img src="<%= asset_path('app-store.png') %>" height="50" alt=""></a>
+						<a href="#"><img src="<%= asset_path('google-play.png') %>" height="50" alt=""></a>
           </p>
         </div>
         <div class="col-md-6">
-          <img src="assets/img/phone.png" class="img-responsive mt" alt="">
+					<img src="<%= asset_path('phone.png') %>" class="img-responsive mt" alt="">
         </div>
       </div><!--/row-->
     </div><!--/container-->
@@ -149,19 +146,19 @@
       <div class="container">
         <div class="row sponsor centered">
           <div class="col-sm-2 col-sm-offset-1">
-            <img src="assets/img/client1.png" alt="">
+						<img src="<%= asset_path('client1.png') %>" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client3.png" alt="">
+						<img src="<%= asset_path('client3.png') %>" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client2.png" alt="">
+						<img src="<%= asset_path('client2.png') %>" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client4.png" alt="">
+						<img src="<%= asset_path('client4.png') %>" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client5.png" alt="">
+						<img src="<%= asset_path('client5.png') %>" alt="">
           </div>
         </div><!--/row-->
       </div>
@@ -213,11 +210,5 @@
       </div><!--/container-->
     </div><!--/F-->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina-1.1.0.js"></script>
   </body>
 </html>
