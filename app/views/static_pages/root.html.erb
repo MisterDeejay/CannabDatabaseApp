@@ -9,7 +9,7 @@
     <link rel="icon" href="assets/img/favicon.ico">
 		<%= favicon_link_tag 'favicon.ico' %>
 
-    <title>BlackTie.co - Sumo Lading</title>
+    <title>Organic Galenicals</title>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
   <body>
 
     <div id="h">
-      <div class="logo">BLACKTIE.CO</div>
+      <div class="logo">ORGANIC GALENICALS</div>
       <div class="social hidden-xs">
         <a href="#"><i class="ion-social-twitter"></i></a>
         <a href="#"><i class="ion-social-instagram"></i></a>
@@ -30,14 +30,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 centered">
-            <h1>Welcome to our new app site.<br/>Sign up now & prepare to enjoy our service.</h1>
+            <h1>Welcome to our new site.<br/>Sign up now & prepare to enjoy our service.</h1>
             <div class="mtb">
-              <form role="form" action="register.php" method="post" enctype="plain"> 
+              <form id="new-user" action="/users" method="post"> 
+								<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
                 <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-                <button class='btn btn-conf btn-green' type="submit">Sart your free trial</button>
+                <button class='btn btn-conf btn-green' type="submit">Sign up!</button>
               </form>
             </div><!--/mt-->
-            <h6>30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.</h6>
           </div>
         </div><!--/row-->
       </div><!--/container-->
@@ -47,18 +48,19 @@
       <div class="row">
         <div class="col-md-6">
           <h2>All the features you want in this kind of apps you'll got it here.</h2>
-          <p class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p class="store">
+          <p class="mt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <!-- <p class="store">
 						<a href="#"><img src="<%= asset_path('app-store.png') %>" height="50" alt=""></a>
 						<a href="#"><img src="<%= asset_path('google-play.png') %>" height="50" alt=""></a>
-          </p>
+					</p> -->
         </div>
         <div class="col-md-6">
-					<img src="<%= asset_path('phone.png') %>" class="img-responsive mt" alt="">
+					<img src="<%= asset_path('pie_chart.bmp') %>" class="img-responsive" alt="">
         </div>
       </div><!--/row-->
     </div><!--/container-->
 
+<!--
     <div id="sep">
       <div class="container">
         <div class="row centered">
@@ -66,10 +68,10 @@
             <h1>Join your experiences with the people you care more. Let us help you.</h1>
             <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h4>
             <p><button class="btn btn-conf-2 btn-green">Learn More</button></p>
-          </div><!--/col-md-8-->
+          </div> /col-md-8 
         </div>
       </div>
-    </div><!--/sep-->
+		</div> /sep
 
     <div class="container ptb">
       <div class="row centered">
@@ -90,11 +92,11 @@
                   <span class="sub">$</span>
                   <span class="detail">29</span>
                   <span class="sub">/mo.</span>
-                </div><!--/price-->
+                </div> /price
                 <button class="btn btn-conf-2 btn-green">Subscribe Now</button>
-              </div><!--/p-body-->
-          </div><!--/price-table-->
-        </div><!--/col-md-4-->
+              </div> /p-body
+          </div> /price-table
+        </div> /col-md-4
 
          <div class="col-md-4">
           <div class="price-table">
@@ -112,11 +114,11 @@
                   <span class="sub">$</span>
                   <span class="detail">49</span>
                   <span class="sub">/mo.</span>
-                </div><!--/price-->
+                </div> /price
                 <button class="btn btn-conf-2 btn-green">Subscribe Now</button>
-              </div><!--/p-body-->
-          </div><!--/price-table-->
-        </div><!--/col-md-4-->
+              </div> /p-body
+          </div> /price-table
+        </div> /col-md-4
 
          <div class="col-md-4">
           <div class="price-table">
@@ -134,13 +136,13 @@
                   <span class="sub">$</span>
                   <span class="detail">89</span>
                   <span class="sub">/mo.</span>
-                </div><!--/price-->
+                </div> /price
                 <button class="btn btn-conf-2 btn-green">Subscribe Now</button>
-              </div><!--/p-body-->
-          </div><!--/price-table-->
-        </div><!--/col-md-4-->
-      </div><!--/row-->
-    </div><!--/container-->
+              </div> /p-body
+          </div> /price-table
+        </div> /col-md-4
+      </div> /row
+    </div> /container
 
     <div id="g">
       <div class="container">
@@ -160,9 +162,9 @@
           <div class="col-sm-2">
 						<img src="<%= asset_path('client5.png') %>" alt="">
           </div>
-        </div><!--/row-->
+        </div> /row
       </div>
-    </div><!--/g-->
+		</div> /g -->
 
     <div id="green">
       <div class="container">
@@ -172,16 +174,16 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <h3>I enjoyed so much the last edition of Landing Sumo, that I bought the tickets for the new one edition of the event the first day.</h3>
-                  <h5><tgr>DAVID JHONSON</tgr></h5>
+									<img src="<%= asset_path('gallery_1.png') %>" class="cann-molecule"></img>
                 </div>
                 <div class="item">
-                  <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
-                  <h5><tgr>MARK LAWRENCE</tgr></h5>
+									<img src="<%= asset_path('gallery_2.png') %>" class="cann-molecule"></img>
                 </div>
                 <div class="item">
-                  <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration, by injected humour.</h3>
-                  <h5><tgr>LISA SMITH</tgr></h5>
+									<img src="<%= asset_path('gallery_3.png') %>" class="cann-molecule"></img>
+                </div>
+								<div class="item">
+									<img src="<%= asset_path('gallery_4.png') %>" class="cann-molecule"></img>
                 </div>
               </div>
             </div><!--/Carousel-->
@@ -195,7 +197,7 @@
       <div class="container">
         <div class="row centered">
           <h2>You Can Contact Us</h2>
-          <h5>HELLO@LANDINGSUMO.COM</h5>
+          <h5>HELLO@CANNABCON.COM</h5>
 
           <p class="mt">
             <a href="#"><i class="ion-social-twitter"></i></a>
@@ -205,7 +207,7 @@
             <a href="#"><i class="ion-social-pinterest"></i></a>
             <a href="#"><i class="ion-social-tumblr"></i></a>
           </p>
-          <h6 class="mt">COPYRIGHT 2014 - LANDING SUMO</h6>
+          <h6 class="mt">COPYRIGHT 2015</h6>
         </div><!--/row-->
       </div><!--/container-->
     </div><!--/F-->
