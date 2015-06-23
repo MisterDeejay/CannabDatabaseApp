@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min
+//= retina-1.1.0
+//= ie-viewport-bug-workaround
 //= require turbolinks
 //= require_tree .
