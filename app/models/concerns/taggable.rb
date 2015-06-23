@@ -1,5 +1,5 @@
 module Taggable
-	extend ActiveRecord::Concern
+	extend ActiveSupport::Concern
 
 	included do
 		has_many :taggings, as: :taggable, dependent: :destroy
