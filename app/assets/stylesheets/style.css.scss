@@ -340,8 +340,25 @@ ul {
 } 
 
 .cann-molecule {
-/*	display: inline !important;*/
 	min-height: 468px;
+}
+
+.cannab-header {
+	padding-top: 30px;
+}
+
+ul.cannab-attr > :first child {
+	padding-top: 50px;
+}
+
+ul.cannab-attr > li {
+	padding: 0;
+	padding-left: 50px;
+  margin-bottom: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
 
 /* FOOTER */
