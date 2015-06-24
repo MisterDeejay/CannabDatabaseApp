@@ -178,7 +178,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url("header.jpg") no-repeat center top;
+	background: url(asset_path("header.jpg")) no-repeat center top;
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
