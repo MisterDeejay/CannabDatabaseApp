@@ -31,6 +31,8 @@ gem 'flux-rails-assets'
 gem 'bcrypt', '~> 3.1.7'
 # Figaro gem - Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file
 gem 'figaro'
+# Email validator
+gem 'email_validator'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
