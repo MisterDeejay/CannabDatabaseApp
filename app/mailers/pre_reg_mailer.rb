@@ -1,0 +1,2 @@
+class PreRegMailer < ApplicationMailer
+end
