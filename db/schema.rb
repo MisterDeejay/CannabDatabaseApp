@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 20150618221812) do
   add_index "phyto_cannabinoids", ["taggable_type", "taggable_id"], name: "index_phyto_cannabinoids_on_taggable_type_and_taggable_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "full_name",       null: false
+    t.string   "full_name"
     t.string   "email",           null: false
     t.string   "username"
     t.string   "session_token"
