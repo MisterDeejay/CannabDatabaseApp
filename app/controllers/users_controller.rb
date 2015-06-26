@@ -8,11 +8,12 @@ class UsersController < ApplicationController
 	##
 	def email_signup
 		@new_user = User.new(user_params)
-		if @new_user.save
+		begin
+			@new_user.save
 			redirect_to thank_you_url 
-		else
-			flash.now[:errors] = @new_user.errors.full_messages
-			render :root
+		rescue 
+			flash.now[:errors] = ["This email has already been registered."]
+			render "static_pages/root"
 		end
 	end
 
