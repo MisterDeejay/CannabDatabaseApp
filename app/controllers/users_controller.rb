@@ -8,11 +8,12 @@ class UsersController < ApplicationController
 	##
 	def email_signup
 		@new_user = User.new(user_params)
+
 		begin
 			@new_user.save
 			redirect_to thank_you_url 
-		rescue 
-			flash.now[:errors] = ["This email has already been registered."]
+		rescue  # this rescue will catch the error triggered by trying to save a duplicate email																	
+			flash.now[:errors] = ["**This email has already been registered.**"]
 			render "static_pages/root"
 		end
 	end
