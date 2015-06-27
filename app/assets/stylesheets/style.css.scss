@@ -4,8 +4,7 @@
 
 /* Import fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Lobster+Two);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu|PT+Serif+Caption|Lobster|Droid+Serif|Yanone+Kaffeesatz|Montserrat|Bree+Serif|Francois+One|Comfortaa|Voltaire|Alice|Doppio+One);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Bree+Serif|Amatic+SC|Lobster+Two);
 
 * { 
 	margin: 0;
@@ -182,7 +181,7 @@ input {
 /* HEADER SECTION */
 #h {
 	background: image-url("headerbg.jpg") no-repeat center top;
-	opacity: 0.9;
+	opacity: 0.8;
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
