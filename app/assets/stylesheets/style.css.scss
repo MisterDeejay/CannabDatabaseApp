@@ -359,8 +359,7 @@ ul {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 300px;
-	background: #03C9A9;
-	color: white;
+	background: #B1E450;
 }
 
 #green tgr {
@@ -374,6 +373,8 @@ ul {
 
 .cannab-header {
 	margin: 60px 0px 0px 70px;
+	font-size: 36px;
+	color: #666;
 }
 
 ul.cannab-attr {
@@ -382,13 +383,14 @@ ul.cannab-attr {
 
 ul.cannab-attr > :first child {
 	padding-top: 50px;
+	color: #666;
 }
 
 ul.cannab-attr > li {
 	padding: 0;
   margin-bottom: 12px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 26px;
   letter-spacing: 1px;
 	list-style-type: disc;
