@@ -5,25 +5,25 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Article.create!([
-  {
-    title: ,
-    journal_id: ,
-    volume: ,
-    issue: ,
-    date_published: ,
-    article_url: ,
-    dosage_included: ,
-    dosage_amt:
-  },
-  {
-    title: ,
-    journal_id: ,
-    volume: ,
-    issue: ,
-    date_published: ,
-    article_url: ,
-    dosage_included: ,
-    dosage_amt:
-  }
-])
+# Article.create!([
+#   {
+#     title: ,
+#     journal_id: ,
+#     volume: ,
+#     issue: ,
+#     date_published: ,
+#     article_url: ,
+#     dosage_included: ,
+#     dosage_amt:
+#   },
+#   {
+#     title: ,
+#     journal_id: ,
+#     volume: ,
+#     issue: ,
+#     date_published: ,
+#     article_url: ,
+#     dosage_included: ,
+#     dosage_amt:
+#   }
+# ])
